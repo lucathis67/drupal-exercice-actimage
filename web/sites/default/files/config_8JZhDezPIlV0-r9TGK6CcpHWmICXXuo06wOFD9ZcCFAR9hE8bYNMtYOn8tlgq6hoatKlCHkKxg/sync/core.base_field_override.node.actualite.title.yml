@@ -1,0 +1,18 @@
+uuid: 905b7949-7c3d-4557-835a-be4292e5c66f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actualite
+id: node.actualite.title
+field_name: title
+entity_type: node
+bundle: actualite
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

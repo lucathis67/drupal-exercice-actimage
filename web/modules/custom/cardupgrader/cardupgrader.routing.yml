@@ -1,0 +1,7 @@
+cardupgrader.admin_settings:
+  path: /admin/config/card_upgrader
+  defaults:
+    _form: \Drupal\cardupgrader\Form\CardUpgraderSettingsForm
+    _title: Settings for the Actualité card
+  requirements:
+    _permission: administer cardupgrader

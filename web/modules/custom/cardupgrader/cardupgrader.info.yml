@@ -1,0 +1,9 @@
+name: cardupgrader
+type: module
+core_version_requirement: ^9 || ^10
+description: Extends the functionality of the card display
+package: Card Upgrader
+
+dependencies:
+  - drupal:views
+

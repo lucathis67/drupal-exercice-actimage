@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_theme()
+ */
+function cardupgrader_theme($existing, $type, $theme, $path) {
+  return [
+    'node__card' => [
+      'base hook' => 'node',
+      'template' => 'node--card',
+    ],
+  ];
+}
+
+
+/**
+* Implements hook_js_settings_alter().
+*/
+function cardupgrader_js_settings_alter(&$settings) {
+  // Provide the user IP address in drupalSettings to JavaScript.
+  // $settings['node']['color'] = \Drupal::request()->getClientIP();
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    // $test = $node->field_color->value;
+    // $variables['#attached']['library'][] = 'mycustomblock/custom'; 
+    // $build['#attached']['drupalSettings']['mycustomblock']['test'] = $test;
+  }
+}

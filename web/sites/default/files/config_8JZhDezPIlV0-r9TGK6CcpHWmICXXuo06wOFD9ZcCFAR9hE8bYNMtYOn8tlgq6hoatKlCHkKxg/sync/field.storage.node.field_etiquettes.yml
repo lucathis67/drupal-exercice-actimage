@@ -1,0 +1,20 @@
+uuid: bdecf7e8-f26b-4f8b-a876-e029dd7651a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_etiquettes
+field_name: field_etiquettes
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

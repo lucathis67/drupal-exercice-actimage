@@ -1,0 +1,7 @@
+cardupgrader_script:
+  version: 1.x
+  js:
+    js/cardupgrader.js: {}
+  dependencies:
+  - core/jquery
+  - core/drupalSettings
